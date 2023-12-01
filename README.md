@@ -14,8 +14,9 @@ We want to predict the weekly sales given store, date etc.
 5. Adam optimizer, lr multiplied by 0.1 after each 250 epochs.
 
 Results: 
-Mean absolute error - 
-Mean absolute percentage error - 
+Mean absolute error - 77618
+
+Mean absolute percentage error - 7.28%
 
 # pump it up
 https://www.kaggle.com/datasets/sumeetsawant/pump-it-up-challenge-driven-data?rvi=1
@@ -23,7 +24,18 @@ https://www.kaggle.com/datasets/sumeetsawant/pump-it-up-challenge-driven-data?rv
 
 Classification problem with tabular data.
 
+We want to predict if a pump is faulty (functional, non functional, functional needs repair) given information about the pump.
 
+
+1. Convert district_code and region_code features to categorical features.
+2. Remove features wpt_name, installer, funder, subvillage, ward, scheme_name and recorded_by, since they had a lot of missing values or unique categorical values.
+3. Convert some of the missing values to np.nan, since the value in the dataset is not consistent (0, 'None', 'unknown').
+4. Impute missing values - median for numeric features and most common value for categorical features.
+5. Perform one hot encoding.
+6. Use xgboost.
+7. Hyperparameters were chosen with optuna to minimize cross entropy loss.
+
+   
 Results:
 Accuracy - 80.8%
 
