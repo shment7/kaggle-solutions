@@ -41,3 +41,16 @@ Accuracy - 80.8%
 
 # intel image classification
 https://www.kaggle.com/datasets/puneet6060/intel-image-classification
+
+
+Classification problem with images.
+
+We want to predict the image natural scene (buildings, forest, glacier, mountain, sea or street) given the image.
+
+
+1. Use DenseNet201 with additional hidden layer at the end to reduce output dimension to 6. All weights are learnable.
+2. batch size=64, lr=0.001, number of epochs=7, cross entropy loss, AdamW optimizer.
+3. Perform simple augmentation on the images.
+
+Results:
+Accuracy - 89%
