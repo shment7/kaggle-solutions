@@ -14,6 +14,7 @@ Data consists of 7 features and 6435 samples - 90% in training set and 10% in te
 5. Adam optimizer, lr multiplied by 0.1 after each 250 epochs.
 
 Results: 
+
 Mean absolute error - 77618
 
 Mean absolute percentage error - 7.28%
@@ -38,6 +39,7 @@ Data consists of 40 features and 59,400 samples - 90% in training set and 10% in
 
    
 Results:
+
 Accuracy - 80.8%
 
 # intel image classification
@@ -55,4 +57,5 @@ The data is balanced.
 3. Perform simple augmentations on the images.
 
 Results:
+
 Accuracy - 93%
