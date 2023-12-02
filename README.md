@@ -5,7 +5,7 @@ https://www.kaggle.com/datasets/yasserh/walmart-dataset
 Regression problem with tabular data.
 
 We want to predict the weekly sales given store, date etc.
-
+Data consists of 7 features and 6435 samples - 90% in training set and 10% in testing set.
 
 1. Convert store and holiday_flag features to categorical features and perform one hot encoding.
 2. Scale numeric features.
@@ -25,7 +25,8 @@ https://www.kaggle.com/datasets/sumeetsawant/pump-it-up-challenge-driven-data?rv
 Classification problem with tabular data.
 
 We want to predict if a pump is faulty (functional, non functional, functional needs repair) given information about the pump.
-
+Data consists of 40 features and 59,400 samples - 90% in training set and 10% in testing set.
+54% of the data labeled as functional, 39% as non functional and 7% as functional needs repair.
 
 1. Convert district_code and region_code features to categorical features.
 2. Remove features wpt_name, installer, funder, subvillage, ward, scheme_name and recorded_by, since they had a lot of missing values or unique categorical values.
@@ -33,7 +34,7 @@ We want to predict if a pump is faulty (functional, non functional, functional n
 4. Impute missing values - median for numeric features and most common value for categorical features.
 5. Perform one hot encoding.
 6. Use xgboost.
-7. Hyperparameters were chosen with optuna to minimize cross entropy loss.
+7. Hyperparameters were chosen with optuna to minimize cross entropy loss with 5 folds cross validation.
 
    
 Results:
@@ -46,11 +47,12 @@ https://www.kaggle.com/datasets/puneet6060/intel-image-classification
 Classification problem with images.
 
 We want to predict the image natural scene (buildings, forest, glacier, mountain, sea or street) given the image.
-
+Data consists of 25,000 RGB images of size 150x150 - 90% of it in training set and 10% in testing set.
+The data is balanced.
 
 1. Use EfficientNet V2 with pretrained weights that were trained on ImageNet with additional hidden layer at the end to reduce output dimension to 6. All weights are learnable.
 2. batch size=64, lr=0.001, number of epochs=7, cross entropy loss, AdamW optimizer.
-3. Perform simple augmentation on the images.
+3. Perform simple augmentations on the images.
 
 Results:
 Accuracy - 93%
