@@ -1,4 +1,4 @@
-# walmart
+# Walmart
 https://www.kaggle.com/datasets/yasserh/walmart-dataset
 
 
@@ -19,7 +19,7 @@ Mean absolute error - 77618
 
 Mean absolute percentage error - 7.28%
 
-# pump it up
+# Pump It Up
 https://www.kaggle.com/datasets/sumeetsawant/pump-it-up-challenge-driven-data?rvi=1
 
 
@@ -42,7 +42,7 @@ Results:
 
 Accuracy - 80.8%
 
-# intel image classification
+# Intel Image Classification
 https://www.kaggle.com/datasets/puneet6060/intel-image-classification
 
 
