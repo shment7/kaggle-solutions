@@ -34,7 +34,7 @@ Data consists of 40 features and 59,400 samples - 90% in training set and 10% in
 3. Convert some of the missing values to np.nan, since the value in the dataset is not consistent (0, 'None', 'unknown').
 4. Impute missing values - median for numeric features and most common value for categorical features.
 5. Perform one hot encoding.
-6. Use xgboost.
+6. Use XGBoost.
 7. Hyperparameters were chosen with optuna to minimize cross entropy loss with 5 folds cross validation.
 
    
