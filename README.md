@@ -58,7 +58,7 @@ The data is balanced.
 
 Results:
 
-Accuracy - 93%
+Accuracy - 92.9%
 
 # IMDb Movie Reviews
 https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
@@ -76,4 +76,4 @@ Data consists of 50,000 reviews - 90% of it in training set and 10% in testing s
 
 Results:
 
-Accuracy - 96%
+Accuracy - 96.02%
