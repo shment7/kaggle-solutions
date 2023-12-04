@@ -54,8 +54,26 @@ The data is balanced.
 
 1. Use EfficientNet V2 with pretrained weights that were trained on ImageNet with additional hidden layer at the end to reduce output dimension to 6. All weights are learnable.
 2. batch size=64, lr=0.001, number of epochs=7, cross entropy loss, AdamW optimizer.
-3. Perform simple augmentations on the images.
+3. Perform simple augmentations(horizontal flip, blur, etc) on the images.
 
 Results:
 
 Accuracy - 93%
+
+# IMDb Movie Reviews
+https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
+
+
+Sentiment analysis problem with text.
+
+We want to predict the sentiment of a movie review (positive or negative) given the review.
+Data consists of 50,000 reviews - 90% of it in training set and 10% in testing set.
+25,000 reviews with positive sentiment and 25,000 reviewswith negative sentiment.
+
+1. Use DeBERTa V3 base with pretrained weights with classification head on top. All weights are learnable.
+2. batch size=8, lr=1e-5, number of epochs=2, cross entropy loss, AdamW optimizer.
+3. Perform simple augmentations(swap some of the words, apply spelling error to some words) on the reviews.
+
+Results:
+
+Accuracy - 96%
