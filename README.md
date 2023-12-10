@@ -93,5 +93,7 @@ Data consists of 2225 documents from the BBC news website - 90% of it in trainin
 Results:
 
 Rouge1 score: 0.3952
+
 Rouge2 score: 0.3612
+
 RougeL score: 0.3496
