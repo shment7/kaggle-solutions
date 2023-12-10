@@ -77,3 +77,21 @@ Data consists of 50,000 reviews - 90% of it in training set and 10% in testing s
 Results:
 
 Accuracy - 96.02%
+
+# BBC News Summary
+https://www.kaggle.com/datasets/pariza/bbc-news-summary
+
+
+Sequence to sequence problem.
+
+We want to generate summary of a given news article.
+Data consists of 2225 documents from the BBC news website - 90% of it in training set and 10% in testing set.
+
+1. Use BART base with pretrained weights. All weights are learnable.
+2. batch size=4, lr=1e-4, number of epochs=5, AdamW optimizer with weight decay=0.1.
+   
+Results:
+
+Rouge1 score: 0.3952
+Rouge2 score: 0.3612
+RougeL score: 0.3496
