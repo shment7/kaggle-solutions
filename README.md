@@ -5,6 +5,7 @@ https://www.kaggle.com/datasets/yasserh/walmart-dataset
 Regression problem with tabular data.
 
 We want to predict the weekly sales given store, date etc.
+
 Data consists of 7 features and 6435 samples - 90% in training set and 10% in testing set.
 
 1. Convert store and holiday_flag features to categorical features and perform one hot encoding.
@@ -26,7 +27,9 @@ https://www.kaggle.com/datasets/sumeetsawant/pump-it-up-challenge-driven-data?rv
 Classification problem with tabular data.
 
 We want to predict if a pump is faulty (functional, non functional, functional needs repair) given information about the pump.
+
 Data consists of 40 features and 59,400 samples - 90% in training set and 10% in testing set.
+
 54% of the data labeled as functional, 39% as non functional and 7% as functional needs repair.
 
 1. Convert district_code and region_code features to categorical features.
@@ -49,7 +52,9 @@ https://www.kaggle.com/datasets/puneet6060/intel-image-classification
 Classification problem with images.
 
 We want to predict the image natural scene (buildings, forest, glacier, mountain, sea or street) given the image.
+
 Data consists of 25,000 RGB images of size 150x150 - 90% of it in training set and 10% in testing set.
+
 The data is balanced.
 
 1. Use EfficientNet V2 with pretrained weights that were trained on ImageNet with additional hidden layer at the end to reduce output dimension to 6. All weights are learnable.
@@ -67,7 +72,9 @@ https://www.kaggle.com/datasets/lakshmi25npathi/imdb-dataset-of-50k-movie-review
 Sentiment analysis problem with text.
 
 We want to predict the sentiment of a movie review (positive or negative) given the review.
+
 Data consists of 50,000 reviews - 90% of it in training set and 10% in testing set.
+
 25,000 reviews with positive sentiment and 25,000 reviewswith negative sentiment.
 
 1. Use DeBERTa V3 base with pretrained weights with classification head on top. All weights are learnable.
@@ -87,6 +94,7 @@ Sequence to sequence problem.
 We want to generate summary of a given news article.
 Data consists of 2225 documents from the BBC news website - 90% of it in training set and 10% in testing set.
 
+
 1. Use BART base with pretrained weights. All weights are learnable.
 2. batch size=4, lr=1e-4, number of epochs=5, AdamW optimizer with weight decay=0.1.
    
@@ -98,7 +106,7 @@ Rouge2 score: 0.3612
 
 RougeL score: 0.3496
 
-# BBC News Summary
+# Human Image Segmentation
 https://www.kaggle.com/datasets/tapakah68/segmentation-full-body-mads-dataset
 
 https://www.kaggle.com/datasets/tapakah68/supervisely-filtered-segmentation-person-dataset
@@ -109,6 +117,7 @@ https://www.kaggle.com/datasets/tapakah68/segmentation-full-body-tiktok-dancing-
 Binary image Segmentation probelm.
 
 We want to generate binary mask image if human given image of human performing different poses on different backgrounds.
+
 Data consists of ~6500 RGB images and corresponding masks - 90% of it in training set and 10% in testing set.
 
 1. Use Unet and MobileNetV3 with pretrained weights that were trained on ImageNet as encoder + Sigmoid layer on top. All weights are learnable.
