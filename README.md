@@ -97,3 +97,26 @@ Rouge1 score: 0.3952
 Rouge2 score: 0.3612
 
 RougeL score: 0.3496
+
+# BBC News Summary
+https://www.kaggle.com/datasets/tapakah68/segmentation-full-body-mads-dataset
+
+https://www.kaggle.com/datasets/tapakah68/supervisely-filtered-segmentation-person-dataset
+
+https://www.kaggle.com/datasets/tapakah68/segmentation-full-body-tiktok-dancing-dataset
+
+
+Binary image Segmentation probelm.
+
+We want to generate binary mask image if human given image of human performing different poses on different backgrounds.
+Data consists of ~6500 RGB images and corresponding masks - 90% of it in training set and 10% in testing set.
+
+1. Use Unet and MobileNetV3 with pretrained weights that were trained on ImageNet as encoder + Sigmoid layer on top. All weights are learnable.
+2. batch size=30, lr=0.001, number of epochs=3, AdamW optimizer.
+3. Loss function is average of binary cross entropy and (1- dice).
+4. Crop images to randomly 256x256 crops.
+
+
+Results:
+
+Dice score: 0.93
