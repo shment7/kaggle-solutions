@@ -16,9 +16,9 @@ Data consists of 7 features and 6435 samples - 90% in training set and 10% in te
 
 Results: 
 
-Mean absolute error - 77618
+Mean absolute error - 68510
 
-Mean absolute percentage error - 7.28%
+Mean absolute percentage error - 7.06%
 
 # Pump It Up
 https://www.kaggle.com/datasets/sumeetsawant/pump-it-up-challenge-driven-data?rvi=1
