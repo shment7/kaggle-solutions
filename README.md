@@ -1,25 +1,3 @@
-# Walmart
-https://www.kaggle.com/datasets/yasserh/walmart-dataset
-
-
-Regression forecasting problem with tabular data.
-
-We want to predict the weekly sales given store, date etc.
-
-Data consists of 7 features and 6435 samples - 90% in training set and 10% in testing set.
-
-1. Convert store and holiday_flag features to categorical features and perform one hot encoding.
-2. Scale numeric features.
-3. Use MLP with 2 hidden layers of size 512.
-4. batch size=512, lr=0.01, number of epochs=750, L1 loss.
-5. Adam optimizer, lr multiplied by 0.1 after every 250 epochs.
-
-Results: 
-
-Mean absolute error - 68510
-
-Mean absolute percentage error - 7.06%
-
 # Pump It Up
 https://www.kaggle.com/datasets/sumeetsawant/pump-it-up-challenge-driven-data?rvi=1
 
@@ -129,3 +107,25 @@ Data consists of ~6500 RGB images and corresponding masks - 90% of it in trainin
 Results:
 
 Dice score: 0.93
+
+# Walmart
+https://www.kaggle.com/datasets/yasserh/walmart-dataset
+
+
+Regression forecasting problem with tabular data.
+
+We want to predict the weekly sales given store, date etc.
+
+Data consists of 7 features and 6435 samples - 90% in training set and 10% in testing set.
+
+1. Convert store and holiday_flag features to categorical features and perform one hot encoding.
+2. Scale numeric features.
+3. Use MLP with 2 hidden layers of size 512.
+4. batch size=512, lr=0.01, number of epochs=750, L1 loss.
+5. Adam optimizer, lr multiplied by 0.1 after every 250 epochs.
+
+Results: 
+
+Mean absolute error - 68510
+
+Mean absolute percentage error - 7.06%
