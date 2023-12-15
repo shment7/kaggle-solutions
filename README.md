@@ -2,7 +2,7 @@
 https://www.kaggle.com/datasets/yasserh/walmart-dataset
 
 
-Regression problem with tabular data.
+Regression forecasting problem with tabular data.
 
 We want to predict the weekly sales given store, date etc.
 
@@ -12,7 +12,7 @@ Data consists of 7 features and 6435 samples - 90% in training set and 10% in te
 2. Scale numeric features.
 3. Use MLP with 2 hidden layers of size 512.
 4. batch size=512, lr=0.01, number of epochs=750, L1 loss.
-5. Adam optimizer, lr multiplied by 0.1 after each 250 epochs.
+5. Adam optimizer, lr multiplied by 0.1 after every 250 epochs.
 
 Results: 
 
